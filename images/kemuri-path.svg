@@ -1,0 +1,22 @@
+<svg width="1920" height="3218" viewBox="0 0 1920 3218" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_7_98)">
+<path d="M1142.46 196.382C1296.26 177.942 1250.82 69.6038 1212.7 35.4234L1247.51 0C2276.43 85.5 2362 1582.88 2170.05 1668C1891.55 1791.5 1018.43 1068.25 863 1896C734 2583 1284 2240.5 1863.05 2521C3224.7 3180.61 687.045 3441.5 18.5455 2995.5C-734.973 2492.78 -713.678 1727.94 18.5457 1564.5C578.236 1439.57 604.576 1116.07 481.046 1023.5C275.546 869.5 -524.067 864.5 -258.567 494C132.254 -51.3823 907.934 224.5 1142.46 196.382Z" fill="url(#paint0_linear_7_98)"/>
+</g>
+<defs>
+<filter id="filter0_i_7_98" x="-538.636" y="0" width="2797.2" height="3217.38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.85098 0 0 0 0 0.772549 0 0 0 0 0.572549 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_7_98"/>
+</filter>
+<linearGradient id="paint0_linear_7_98" x1="931.934" y1="0" x2="931.934" y2="2501" gradientUnits="userSpaceOnUse">
+<stop offset="0.0656249" stop-color="#FFDC61"/>
+<stop offset="0.315625" stop-color="#FFE99E" stop-opacity="0.476042"/>
+<stop offset="0.638353" stop-color="#FFF9BF" stop-opacity="0.75"/>
+<stop offset="1" stop-color="#FFE589"/>
+</linearGradient>
+</defs>
+</svg>
