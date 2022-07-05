@@ -7,18 +7,6 @@ import storeData from './StoreData'
 import './Pagination.css'
 
 const Pagination = ({paginate, currentIndex}) => {
-    // function handleClick(key) {
-    //     const thumbKey = document.getElementById(key);
-    //     const prevElement = document.getElementsByClassName('active-thumb');
-    //     const activeElement = thumbKey.childNodes[0].children[0];
-    //     const prevOverlay = prevElement[0].children[0];
-    //     const activeOverlay = activeElement.children[0];
-    //     prevElement[0].classList.remove('active-thumb')
-    //     activeElement.classList.add('active-thumb')
-    //     prevOverlay.classList.remove('hidden')
-    //     activeOverlay.classList.add('hidden')
-    // }
-
     const [currentPage,setCurrentPage] = useState(1);
     const prevPage = () => setCurrentPage(1);
     const nextPage = () => setCurrentPage(2); 
@@ -27,8 +15,6 @@ const Pagination = ({paginate, currentIndex}) => {
     const indexOfLastStore = currentPage * 5;
     const indexOfFirstStore = indexOfLastStore - 5;
     const currentStores = storeData.slice(indexOfFirstStore,indexOfLastStore)
-
-    // console.log(currentIndex)
 
     return (
         <div className='pagination'>

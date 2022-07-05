@@ -40,3 +40,47 @@
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .all-store-slider {
+        z-index: 99;
+        margin-top: 10%;
+    }
+    .store-img-wrapper {
+        background-size: 85vw;
+    }
+    .store-mask {
+        width: 86vw;
+        mask-image: url(/public/images/mask-shape.svg);
+        mask-repeat: no-repeat;
+        mask-size: 85vw;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .all-store-slider {
+        z-index: 99;
+        margin-top: 10%;
+        text-align:center;
+    }
+    .store-wrapper {
+        left: 0;
+    }
+    .store-img-cropper {
+        width: 100vw;
+        overflow: hidden;
+    }
+    .store-img-wrapper {
+        background-size: 135vw;
+        margin-top: 5%;
+        margin-left: -15%;
+        
+    }
+    .store-mask {
+        width: 138vw;
+        mask-image: url(/public/images/mask-shape.svg);
+        mask-repeat: no-repeat;
+        mask-size: 135vw;
+    }
+}

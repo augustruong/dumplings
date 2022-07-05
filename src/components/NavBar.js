@@ -17,6 +17,7 @@ export default class NavBar extends React.Component {
     }
     handleClick = () => {
         this.setState({clicked: !this.state.clicked})
+        console.log("click")
     }
 
     handleResize = () => {
@@ -58,7 +59,6 @@ export default class NavBar extends React.Component {
                 {window.innerWidth <= 1100 &&
                     <div className='nav-bar'>
                         <img src={logo} className={this.state.logoShow ? "logo show" : "logo hidden"}/>
-                        <div>
                             <div className='menu-icon' onClick={this.handleClick}>
                                 <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'} />
                             </div>
@@ -76,7 +76,7 @@ export default class NavBar extends React.Component {
                                     <Link to='contact' spy={true} smooth={true} offset={50} duration={500} onClick={this.closeMobileMenu}>Contact</Link>
                                 </li>
                             </ul>
-                        </div>                          
+                                                 
                     </div>
                 }
                 {window.innerWidth > 1100 &&

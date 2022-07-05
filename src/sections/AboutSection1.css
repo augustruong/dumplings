@@ -90,48 +90,80 @@
 
 @media screen and (max-width: 1024px) {
     .l-section.about-1 {
-        padding: 5% 0 80% 0;
+        padding: 20% 0 120% 0;
     }
    
-    .bao, .gyouza, .hargow {
-        width: 20%;
+    .bao, .gyouza {
+        width:28%;
     }
     .shumai {
-        width: 28%;
-        top: 45vh;
+        width: 40%;
+        top: 20vh;
     }
     
     .bao {
-        top: 42vh;
-        left: 45%;
+        top: 30vh;
+        left: 55%;
     }
     
     .gyouza {
-        top: 90vh;
-        left: 24%;
+        top: 54vh;
+        left: 15%;
     }
     
     .hargow {
-        top: 75vh;
+        width: 25%;
+        top: 60vh;
         right: 10%;
     }
     
     .box {
-        width: 35%;
-        top: 75vh;
+        width: 50%;
+        top: 55vh;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .c-title--about__wrap {
-        padding: 10% 0;
-    }
-}
+    /* .l-section.about-1 > .l-section__inner {
+        display: flex;
+        flex-direction: column;
+    } */
 
-@media screen and (max-width: 480px) {
+    .l-section.about-1 {
+        padding: 20% 0 220% 0;
+    }
+
     .c-title--about__wrap {
         min-width: 350px;
         width: 40%;
         padding: 10% 0;
+    }
+    .bao, .gyouza, .shumai, .box {
+        width: 40%;
+    }
+    .shumai {
+        width: 55%;
+        top: 30vh;
+    }
+    
+    .bao {
+        top: 50vh;
+        left: 50%;
+    }
+    
+    .gyouza {
+        top: 68vh;
+        left: 10%;
+    }
+    
+    .hargow {
+        width: 35%;
+        top: 82vh;
+        right: 10%;
+    }
+    
+    .box {
+        width: 65%;
+        top: 82vh;
     }
 }

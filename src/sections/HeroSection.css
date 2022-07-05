@@ -61,12 +61,21 @@
     height: 2380px;
     margin-left: -10vw;
 }
+
+.kemuri-path__img-mobile {
+    background-image: url("/public/images/kemuri/path-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1666px;
+    width: 240%;
+    margin-left: -60%;
+}
   
 
 .view-map-btn {
     margin-right: 75px;
     padding: 12px 60px 15px 60px;
-    border-radius: 15px;
+    
 }
 
 .link-button {
@@ -103,7 +112,7 @@
 
 @media screen and (max-width: 1024px) {
     .l-kv__wrap {
-        padding-bottom: 40%;
+        padding-bottom: 30%;
     }
     .l-kv__inner {
         flex-direction: column;
@@ -190,8 +199,16 @@
 } 
 
 @media screen and (max-width: 512px) {
+    .l-kv__right {
+        width: 100%;
+        top: -12%;
+    }
+    .l-kv__img {
+        width: 100vw;
+    }
     .l-kv__text {
         text-align: center;
+        margin-top: 30%;
     }
     .l-kv__text > h1 {
         font-size: 58px;
@@ -206,9 +223,18 @@
 
     .l-kv__left {
         padding-left: 0;
+        
     }
     .l-kv__cta {
-        margin: 40px auto 0 auto;
+        margin: 65% auto 0 auto;
     }
-
+    .kemuri-path__wrapper {
+        margin-top: -33%;
+    }
+    .view-map-btn {
+        background-color: #FFFEDD;
+    }
+    .view-map-btn:hover {
+        background-color: #fffeddd0;
+    }
 }

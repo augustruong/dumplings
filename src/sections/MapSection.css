@@ -26,3 +26,32 @@
 .map-img:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 1024px) {
+    .l-section.map {
+        padding: 60% 0 60% 0;
+    }
+    .c-title--map__wrap {
+        padding-left: 10%;
+        margin-top: 50%;
+    }
+    .map-img__wrap {
+        padding-top: 20%;
+        right: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .l-section.map {
+        padding: 60% 0 120% 0;
+    }
+    .c-title--map__wrap {
+        padding-left: 10%;
+        margin-top: 95%;
+    }
+    .map-img__wrap {
+        right: 0;
+        width: 100%;
+    }
+}

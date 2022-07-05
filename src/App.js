@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import HeroSection from './sections/HeroSection';
@@ -11,7 +11,7 @@ import ContactSection from './sections/ContactSection';
 
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <>
       {window.innerWidth <= 1100 &&
@@ -20,10 +20,10 @@ function App() {
       {window.innerWidth >= 1100 &&
           <NavBar menuIcon={false} />
       }
-      <HeroSection />
+      <HeroSection/>
       <AboutSection1 />
       <AboutSection2 />
-      <MapSection />
+      <MapSection/>
       <StoreSection />
       <ContactSection />
     </>

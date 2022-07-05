@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect }  from 'react'
 
 import './MapSection.css'
 
 
-function MapSection() {
+const MapSection = () => {
+  var initDevice;
+  if (window.innerWidth > 1100) { initDevice = "pc" } 
+  else if (window.innerWidth > 512) { initDevice = "tablet"}
+  else { initDevice = "mobile" }
+  const [device,setDevice] = useState(initDevice);
+    
+  useEffect(() => {
+        function handleResize() {
+            if (window.innerWidth > 1100) { setDevice("pc")} 
+            else if (window.innerWidth > 512) {setDevice("tablet")}
+            else {setDevice("mobile")}
+            console.log(device);
+
+        }
+        window.addEventListener('resize',handleResize);
+  })
+
   return (
     <section id='map' className='l-section map'>
         <div className='c-title--map__wrap'>
@@ -18,8 +35,9 @@ function MapSection() {
           aria-label='Google Map'
           
         >
-          <img className='map-img' src={process.env.PUBLIC_URL + '/images/map.png'}
+          <img className='map-img' src={process.env.PUBLIC_URL + `/images/map/map-${device}.png`}
                title='Click to view in Google Map'/>
+          
         </a>
     </section>
   )

@@ -5,7 +5,11 @@ import './HeroSection.css'
 
 
 const HeroSection = () => {
-    const [device,setDevice] = useState("pc");
+    var initDevice;
+    if (window.innerWidth > 1100) { initDevice = "pc" } 
+    else if (window.innerWidth > 512) { initDevice = "tablet"}
+    else { initDevice = "mobile" }
+    const [device,setDevice] = useState(initDevice);
     
     useEffect(() => {
         function handleResize() {
@@ -15,6 +19,7 @@ const HeroSection = () => {
         }
         window.addEventListener('resize',handleResize);
     })
+    
     return (
     <section id='hero' className='l-kv__wrap'>
         <div className='l-kv__inner'>

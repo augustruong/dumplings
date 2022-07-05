@@ -19,10 +19,12 @@ export default function AllStoreSlider() {
                         <div key={store.id}
                             className={currentIndex === index+1 ? 'store-wrapper active-store' : 'store-wrapper'}
                         >
+                            <div className='store-img-cropper'>
                                 <div className='store-img-wrapper'>
                                     <img className='store-mask' 
-                                    src={process.env.PUBLIC_URL + `/images/stores/${store.id}/01.png`}/>
+                                         src={process.env.PUBLIC_URL + `/images/stores/${store.id}/01.png`}/>
                                 </div>
+                            </div>
                                 <StoreDetail 
                                     name={store.name} 
                                     address={store.address} 

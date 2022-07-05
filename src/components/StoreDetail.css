@@ -37,7 +37,6 @@
 
 table {
     width: 100%;
-    /* height: 120px; */
     border-radius: 20px;
     border-collapse: separate;
     background-color: #fff;
@@ -82,10 +81,67 @@ table thead th:last-child, tbody th:last-child{
 .view-more-btn {
     padding: 10px 40px 13px 40px;
     margin-top: 20px;
-    border-radius: 10px;
 }
 
 a {
     text-decoration:none;
     color: #734D29;
+}
+
+@media screen and (max-width: 1024px) {
+    .store-detail-wrapper {
+        margin: 32% auto 0 auto;
+    }
+
+    .desc-wrapper {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .store-detail-wrapper {
+        margin: 45% auto 0 auto;
+        width: 100vw;
+        padding: 0 7%;
+    }
+
+    .store-detail-wrapper > .desc-wrapper {
+        padding-left: 7%;
+        text-align: left;
+    }
+    .store-name {
+        font-size: 27px;
+    }
+
+    table {
+        border-radius: 10px;
+        font-size: 13px;
+        margin: 0 auto;
+    }
+    table thead th {
+        height: 44px;
+    }
+    table tbody th {
+        height: 22px;
+    }
+
+    .view-more-btn {
+        margin-left: -15%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .store-detail-wrapper {
+        margin: 45% auto 0 auto;
+        width: 100vw;
+        padding: 0 5%;
+    }
+
+    .store-detail-wrapper > .desc-wrapper {
+        padding-left: 5%;
+        text-align: left;
+    }
+    .store-name {
+        letter-spacing: 0;
+    }
 }
