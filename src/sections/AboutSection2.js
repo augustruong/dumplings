@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect }  from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import './AboutSection2.css'
 
 function AboutSection2() {
+  useEffect(()=> {
+    Aos.init();
+  })
+
   return (
     <section id='about-2' className='l-section about-2'>
         <div className='about-dp-left'>
-          <img className='dp-groups-img' src={process.env.PUBLIC_URL + '/images/dp-group-1.gif'}/>
+          <img className='dp-groups-img' src={process.env.PUBLIC_URL + '/images/dp-group-1.gif'}
+              data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-out"/>
         </div>
         <div className='about-dp-right'>
           <div className='c-title--about__wrap'>

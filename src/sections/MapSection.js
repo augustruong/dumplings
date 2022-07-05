@@ -1,4 +1,6 @@
 import React, { useState, useEffect }  from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import './MapSection.css'
 
@@ -11,6 +13,8 @@ const MapSection = () => {
   const [device,setDevice] = useState(initDevice);
     
   useEffect(() => {
+    Aos.init();
+
         function handleResize() {
             if (window.innerWidth > 1100) { setDevice("pc")} 
             else if (window.innerWidth > 512) {setDevice("tablet")}
@@ -34,7 +38,8 @@ const MapSection = () => {
           
         >
           <img className='map-img' src={process.env.PUBLIC_URL + `/images/map/map-${device}.png`}
-               title='Click to view in Google Map'/>
+               title='Click to view in Google Map'
+               data-aos="zoom-out" data-aos-duration="700" data-aos-easing="ease-in-out"/>
           
         </a>
     </section>

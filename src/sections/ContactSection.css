@@ -12,7 +12,7 @@
 
 .dpgroup-img-pc {
     width: 80%;
-    margin-top: 32%;
+    margin-top: 10%;
 }
 
 .contact-form-wrap {
@@ -120,6 +120,7 @@ label {
         display: block;
         width: 60%;
         margin-left: 5%;
+        margin-top: -18%;
     }
     .contact-form-wrap {
         margin: 5% auto 0 auto;
@@ -134,9 +135,10 @@ label {
     
     
     .dpgroup-img-mob {
-        display: block;
-        width: 80%;
-        margin-left: -10%;
+        width: 85%;
+        margin-left: -15%;
+        margin-top: -45%;
+
     }
     .contact-form-wrap {
         background-image: url("/public/images/contact-shape/contact-shape-mob.png");
