@@ -1,0 +1,28 @@
+.l-section.map {
+    margin-bottom: 30px;
+    padding: 38% 0 10% 0;
+}
+
+.c-title--map__wrap {
+    text-align: left;
+    /* padding: 38% 0 8% 100px; */
+    padding-left: 100px;
+    z-index: 2;
+    position: absolute;
+}
+
+.map-img__wrap {
+    position: absolute;
+    width: 80%;
+    right: 5%;
+    top: 0;
+    z-index: 1;
+}
+
+.map-img {
+    width: 100%;
+}
+
+.map-img:hover {
+    cursor: pointer;
+}

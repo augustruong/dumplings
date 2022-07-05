@@ -1,0 +1,47 @@
+#store-img-slider {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    top: 30vh;
+    left: -2vw;
+}
+
+.img-slider-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-img-wrapper {
+    background-image: url(/public/images/mask-shape.svg);
+    background-size: 50vw;
+    background-repeat: no-repeat;
+    filter: drop-shadow(-4px 9px 0px #D9C592) drop-shadow(0px -10px 0px #FFDC60);
+    
+}
+
+.store-mask {
+    width: 51vw;
+    mask-image: url(/public/images/mask-shape.svg);
+    mask-repeat: no-repeat;
+    mask-size: 50vw;
+}
+
+.dots-wrapper {
+    /* position: absolute; */
+    display: flex;
+    margin-left: 200px;
+    transform: translateY(-10px);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: #D9D9D9;
+}
+.dot.active {
+    background-color: #FFDC61;
+}

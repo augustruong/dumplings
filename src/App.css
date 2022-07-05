@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  background-color: #FFFEDD;
+}
+
+@font-face {
+  font-family: ZetsubinGothic;
+  src: url("../public/fonts/07鉄瓶ゴシック.otf");
+}
+
+h1 {
+  color: #E25325;
+  font-family: ZetsubinGothic;
+  font-size: 69px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+
+}
+
+h2, .span-h2 {
+  color: #734D29;
+  font-family: ZetsubinGothic;
+  font-size: 27px;
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  color: #B2966C;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 0.5em;
+}
+
+p,label {
+  font-family: 'Zen Maru Gothic',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  color: #734D29;
+}
+
+small {
+  font-family: 'Zen Maru Gothic',sans-serif;
+  color: #734D29;
+}
+
+button {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #734D29;
+  background-color: #FFDC61;
+  border: none;
+  box-shadow: 0 6px #d7ab68;
+}
+
+button:hover {
+  background-color: #ffd745;
+  cursor: pointer;
+}
+
+li:hover,.link-button:hover {
+  color: #E25325;
+  border-bottom: 2px solid #E25325;
+  cursor: pointer;
+}
+
+.l-section {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.l-section__inner {
+  width: 100%;
+  max-width: 1536px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1400px) {
+  h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  
+  }
+  
+  h2, .span-h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 27px;
+  }
+  
+  p,label {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  
+  }
+  
+  h2, .span-h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 27px;
+  }
+}

@@ -1,0 +1,214 @@
+.l-kv__wrap {
+    height: auto;
+    padding: 16% 0 10% 0;
+    position: relative;
+}
+
+.l-kv__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.l-kv__left {
+    padding-left: 10%;
+    z-index: 100;
+}
+
+.l-kv__text > h1 {
+    font-size: 90px;
+}
+
+.l-kv__text > h2,h3 {
+    font-size: 40px;
+    letter-spacing: 0.1 !important;
+}
+
+.l-kv__cta {
+    margin-top: 40px;
+}
+
+.l-kv__img {
+    width: 48vw;
+    height: auto;
+    margin-top: -55%;
+    float: right;
+}
+
+.kemuri-path__wrapper {
+    position: absolute;
+    width: 100vw;
+    max-height: 3217px;
+    top: 68%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.kemuri-path__img-pc {
+    background-image: url("/public/images/kemuri/path-pc.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150%;
+    height: 3217px;
+    margin-left: -30%;
+}
+
+.kemuri-path__img-tablet {
+    background-image: url("/public/images/kemuri/path-tablet.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150%;
+    height: 2380px;
+    margin-left: -10vw;
+}
+  
+
+.view-map-btn {
+    margin-right: 75px;
+    padding: 12px 60px 15px 60px;
+    border-radius: 15px;
+}
+
+.link-button {
+    display: inline-block;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #734D29;
+    border-bottom: 2px solid #734D29;
+}
+
+@media screen and (max-width: 1324px) {
+    .l-kv__right {
+        width: 35%;
+    }
+
+    .kemuri-path__wrapper {
+        top: 72%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .l-kv__text {
+        margin-top: 16%;
+    }
+    .l-kv__right {
+        margin-top: -14%;
+    }
+
+    .kemuri-path__wrapper {
+        top: 76%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .l-kv__wrap {
+        padding-bottom: 40%;
+    }
+    .l-kv__inner {
+        flex-direction: column;
+        position: relative;
+    }
+    .l-kv__right {
+        width: 56%;
+        right: 0;
+        position: absolute;
+    }
+    .l-kv__img {
+        width: 100%;
+        margin-top: -15vw;
+    }
+    .l-kv__text {
+        margin-top: 16%;
+    }
+    .l-kv__text > h1 {
+        font-size: 90px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .l-kv__text > h2,h3 {
+        font-size: 40px;
+        letter-spacing: 0.1 !important;
+    }
+    
+    .l-kv__cta {
+        width: 25%;
+        text-align: center;
+        min-width: 230px;
+    }
+
+    .view-map-btn {
+        margin-bottom: 30px;
+        margin-right: 0;
+        padding: 12px 80px 15px 80px;
+    }
+
+    .kemuri-path__wrapper {
+        margin-top: -15vh;
+    }
+    .kemuri-path__img-tablet {
+        width: 130%;
+        margin-left: -10vw;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .l-kv__img {
+        width: 110%;
+    }
+    .kemuri-path__wrapper {
+        margin-top: -5vh;
+    }
+    .kemuri-path__img-tablet {
+        width: 175%;
+        margin-left: -30vw;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .l-kv__text > h1 {
+        font-size: 69px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .l-kv__text > h2,h3 {
+        font-size: 30px;
+        letter-spacing: 0.15em !important;
+    }
+    .l-kv__img {
+        width: 130%;
+    }
+    .kemuri-path__wrapper {
+        margin-top: 0;
+    }
+    .kemuri-path__img-tablet {
+        width: 175%;
+        margin-left: -50vw;
+    }
+} 
+
+@media screen and (max-width: 512px) {
+    .l-kv__text {
+        text-align: center;
+    }
+    .l-kv__text > h1 {
+        font-size: 58px;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    
+    .l-kv__text > h2,.l-kv__text > h3 {
+        font-size: 24px;
+        letter-spacing: 0.15em;
+    }
+
+    .l-kv__left {
+        padding-left: 0;
+    }
+    .l-kv__cta {
+        margin: 40px auto 0 auto;
+    }
+
+}

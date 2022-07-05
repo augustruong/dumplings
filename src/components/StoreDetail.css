@@ -1,0 +1,91 @@
+.store-detail-wrapper {
+    width: 480px;
+    margin-left: 70px;
+    transform: translateY(-20%);
+}
+
+.store-name {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 135.5%;
+    letter-spacing: 0.05em;
+}
+
+.store-address {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+.store-tel {
+    font-weight: 500;
+    letter-spacing: 0.07em;
+}
+
+.store-point {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #E25325;
+    margin-right:10px;
+    padding-bottom: 4px;
+}
+
+.mappin-icon, .phone-icon {
+    transform: scale(0.8) translateY(5px);
+    margin: 0 15px;
+}
+
+table {
+    width: 100%;
+    /* height: 120px; */
+    border-radius: 20px;
+    border-collapse: separate;
+    background-color: #fff;
+    color: #734D29;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    table-layout: fixed;
+    margin-top: 20px;
+}
+
+table thead th{
+    height: 60px;
+    border-bottom: 2px solid #FFFEDD;
+    border-right: 2px solid #FFFEDD;
+}
+
+table tbody th {
+    height: 30px;
+    border-right: 2px solid #FFFEDD;
+}
+
+table thead th:last-child, tbody th:last-child{
+    border-right: none;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    float: right;
+}
+
+.point-stars-wrapper {
+    margin-top: 15px;
+    align-items: center;
+    display: flex;
+    float: right;
+}
+
+.view-more-btn {
+    padding: 10px 40px 13px 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration:none;
+    color: #734D29;
+}
