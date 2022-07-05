@@ -12,7 +12,7 @@ export default function ContactSection() {
                         <h1>おすすめしたい</h1>
                         <h2>他のいい店舗が知りますか？</h2>
                     </div>
-                    <img className='dpgroup-img-pc' src={process.env.PUBLIC_URL + '/images/dp-group-2.png'}/>
+                    <img className='dpgroup-img-pc' src={process.env.PUBLIC_URL + '/images/dp-group-2.gif'}/>
                 </div>
                 <div className='contact-form-wrap'>
                     <p className='form-title'>Contact Form</p>
@@ -49,7 +49,7 @@ export default function ContactSection() {
                         <input type="submit" value="Submit"></input>
                     </form>
                 </div>
-                <img className='dpgroup-img-mob' src={process.env.PUBLIC_URL + '/images/dp-group-2.png'}/>
+                <img className='dpgroup-img-mob' src={process.env.PUBLIC_URL + '/images/dp-group-2.gif'}/>
 
             </div>
             

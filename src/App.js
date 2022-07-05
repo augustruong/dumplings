@@ -10,6 +10,7 @@ import ContactSection from './sections/ContactSection';
 
 
 import './App.css';
+import './Animation.css'
 
 const App = () => {
   return (

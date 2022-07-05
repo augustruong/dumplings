@@ -24,29 +24,32 @@
     position: absolute;
 }
 
-.bao, .gyouza, .hargow {
-    width: 15%;
-}
-
 .shumai {
-    width: 22%;
-    top: 0%;
+    top: 0;
+    width: 20vw;
+    animation: kata1 1.5s infinite normal;
 }
 
 .bao {
+    width: 18vw;
     top: -65%;
-    left: 30%;
+    left: 25%;
+    animation: kata1 1.7s infinite normal;
 }
 
 .gyouza {
     top: -65%;
-    right: 30%;
+    right: 24%;
+    width: 20vw;
+    animation: kata1 1.9s infinite normal;
 }
 
 .hargow {
-    top: 10%;
-    right: 10%;
+    width: 16vw;
+    top: -10%;
+    right: 5%;
     z-index: 10;
+    animation: kata1 2.1s infinite normal;
 }
 
 .box {
@@ -54,6 +57,7 @@
     top: -15%;
     right: 0;
     z-index: 9;
+    animation: kata1-2 2.3s infinite ease-in-out;
 }
 
 @media screen and (max-width: 1250px) {
@@ -97,7 +101,7 @@
         width:28%;
     }
     .shumai {
-        width: 40%;
+        width: 27%;
         top: 20vh;
     }
     
@@ -124,46 +128,41 @@
 }
 
 @media screen and (max-width: 640px) {
-    /* .l-section.about-1 > .l-section__inner {
-        display: flex;
-        flex-direction: column;
-    } */
-
     .l-section.about-1 {
-        padding: 20% 0 220% 0;
+        padding: 20% 0 195% 0;
     }
 
     .c-title--about__wrap {
         min-width: 350px;
         width: 40%;
-        padding: 10% 0;
+        padding: 8% 0;
     }
-    .bao, .gyouza, .shumai, .box {
-        width: 40%;
-    }
+    
     .shumai {
         width: 55%;
         top: 30vh;
     }
     
     .bao {
-        top: 50vh;
+        width: 50%;
+        top: 48vh;
         left: 50%;
     }
     
     .gyouza {
-        top: 68vh;
-        left: 10%;
+        width: 55%;
+        top: 62vh;
+        left: 5%;
     }
     
     .hargow {
-        width: 35%;
-        top: 82vh;
-        right: 10%;
+        width: 45%;
+        top: 72vh;
+        right: 0;
     }
     
     .box {
-        width: 65%;
-        top: 82vh;
+        width: 75%;
+        top: 80vh;
     }
 }

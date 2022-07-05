@@ -8,12 +8,26 @@
     width: 44vw;
 }
 
-.dp-title-text {
+.about-dp-right > .c-title--about__wrap {
+    background: none;
+    text-align: left;
+    padding: 0;
+    margin-left: 5%;
+    min-height: 0;
+    min-width: 0;
+    width: 100%;
+}
+
+.about-dp-right > .c-title--about__wrap > .c-title--about {
     text-align: left;
     margin-bottom: 5%;
 }
+.about-dp-right {
+    padding: 0 7%;
+    margin-left: 5%;
+}
 
-.desc-wrapper {
+.about-dp-right > .desc-wrapper {
     display: flex;
     align-items: baseline;
     margin-bottom: 3%;
@@ -26,18 +40,22 @@
 
 
 @media screen and (max-width: 1100px) {
+    .about-dp-right {
+        padding: 0;
+        margin-left: 0;
+    }
     .l-section.about-2 {
         flex-direction: column-reverse;
     }
     .dp-groups-img {
         width: 60%;
-        margin-top: 5%;
+        margin-top: 10%;
     }
-    .dp-title-text {
+    .about-dp-right > .c-title--about {
         margin-left: 10%;
     }
     .about-dp-right > .desc-wrapper {
-        margin-left: 25%;
+        margin-left: 10%;
         padding-right: 10%;
     }
 }
@@ -47,7 +65,17 @@
         width: 100%;
         margin-top: 15%;
     }
-    .dp-title-text {
+    .about-dp-right > .c-title--about__wrap {
+        background-image: url("/public/images/bao-shape.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 40%;
+        padding: 8% 0;
+        min-width: 350px;
+        margin: 0 auto;
+    }
+
+    .about-dp-right > .c-title--about__wrap > .c-title--about {
         text-align: center;
         margin-bottom: 10%;
         margin-left: auto;

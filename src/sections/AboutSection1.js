@@ -9,15 +9,15 @@ function AboutSection1() {
         <div className='c-title--about__wrap'>
             <div className='c-title--about'>
               <h3>ABOUT</h3>
-              <h1>ダンプリング</h1>
+              <h1 className='jittery'>ダンプリング</h1>
               <h2>の種類</h2>
             </div>
         </div>
-        <img className='shumai' src={process.env.PUBLIC_URL + '/images/shumai-stick.png'}/>
-        <img className='bao' src={process.env.PUBLIC_URL + '/images/bao-2.png'}/>
-        <img className='gyouza' src={process.env.PUBLIC_URL + '/images/gyouza-2.png'}/>
-        <img className='hargow' src={process.env.PUBLIC_URL + '/images/hargow.png'}/>
-        <img className='box' src={process.env.PUBLIC_URL + '/images/box-2.png'}/>
+        <img className='shumai' src={process.env.PUBLIC_URL + '/images/shurui/shumai.png'}/>
+        <img className='bao' src={process.env.PUBLIC_URL + '/images/shurui/bao.png'}/>
+        <img className='gyouza' src={process.env.PUBLIC_URL + '/images/shurui/gyouza.png'}/>
+        <img className='hargow' src={process.env.PUBLIC_URL + '/images/shurui/hargow.png'}/>
+        <img className='box' src={process.env.PUBLIC_URL + '/images/shurui/box-2.png'}/>
       </div>  
     </section>
   )

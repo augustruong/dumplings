@@ -19,6 +19,12 @@
     font-size: 90px;
 }
 
+.h1-dumplings {
+    width: 85%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
 .l-kv__text > h2,h3 {
     font-size: 40px;
     letter-spacing: 0.1 !important;
@@ -33,6 +39,8 @@
     height: auto;
     margin-top: -55%;
     float: right;
+    animation: kata0 1.8s infinite normal;
+
 }
 
 .kemuri-path__wrapper {

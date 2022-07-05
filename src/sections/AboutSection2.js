@@ -6,13 +6,16 @@ function AboutSection2() {
   return (
     <section id='about-2' className='l-section about-2'>
         <div className='about-dp-left'>
-          <img className='dp-groups-img' src={process.env.PUBLIC_URL + '/images/dp-group-1.png'}/>
+          <img className='dp-groups-img' src={process.env.PUBLIC_URL + '/images/dp-group-1.gif'}/>
         </div>
         <div className='about-dp-right'>
-          <div className='dp-title-text'>
-            <h3>ABOUT</h3>
-            <h1>ダンプリング<span className='span-h2'>とは？</span></h1>
+          <div className='c-title--about__wrap'>
+            <div className='c-title--about'>
+              <h3>ABOUT</h3>
+              <h1>ダンプリング<span className='span-h2'>とは？</span></h1>
+            </div>
           </div>
+          
           <div className='desc-wrapper'>
             <img className='gyoza-icon' src={process.env.PUBLIC_URL + '/icons/gyoza-icon.svg'}/>
             <p className='about-dp-desc'>

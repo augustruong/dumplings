@@ -15,8 +15,6 @@ const MapSection = () => {
             if (window.innerWidth > 1100) { setDevice("pc")} 
             else if (window.innerWidth > 512) {setDevice("tablet")}
             else {setDevice("mobile")}
-            console.log(device);
-
         }
         window.addEventListener('resize',handleResize);
   })

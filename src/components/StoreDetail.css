@@ -4,6 +4,12 @@
     transform: translateY(-20%);
 }
 
+.store-detail-wrapper > .desc-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
 .store-name {
     font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 700;
@@ -130,7 +136,7 @@ a {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 393px) {
     .store-detail-wrapper {
         margin: 45% auto 0 auto;
         width: 100vw;

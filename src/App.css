@@ -129,3 +129,9 @@ li:hover,.link-button:hover {
     font-size: 27px;
   }
 }
+
+/* .jittery span {
+  animation: jitter 200ms linear infinite;
+  color:#f06d06;
+  display:inline-block;
+} */

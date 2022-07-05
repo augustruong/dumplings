@@ -26,7 +26,9 @@ const HeroSection = () => {
             <div className='l-kv__left'>
                 <div className='l-kv__text'>
                     <h2>お茶の水で</h2>
-                    <h1>ダンプリング</h1>
+                    {/* <h1 className='jittery'>ダンプリング</h1> */}
+                    <img className='h1-dumplings' src={process.env.PUBLIC_URL + `/images/h1-dumplings.gif`}/>
+
                     <h3>店舗をご紹介するサイト</h3>
                 </div>
                 <div className='l-kv__cta'>
