@@ -1,23 +1,25 @@
 .l-section.about-1 {
-    padding: 24% 0 10% 0;
+    width: 100%;
+    position: relative;
 }
-.c-title--about__wrap {
+
+.l-section.about-1  > .c-title--about__wrap {
+    position: absolute;
+    top: 0;
     background-image: url("/public/images/bao-shape.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 34%;
     padding: 5% 0;
-    margin: 0 auto;
     min-width: 414.65px;
     min-height: 264.7px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-20%);
 }
 
 .c-title--about{
     text-align: center;
-}
-
-.bao-shape {
-    width: 34%;
 }
 
 .shumai, .bao, .gyouza, .hargow, .box {
@@ -25,20 +27,21 @@
 }
 
 .shumai {
-    top: 0;
+    top: 40%;
+    left: 0;
     width: 20vw;
     animation: kata1 1.5s infinite normal;
 }
 
 .bao {
     width: 18vw;
-    top: -65%;
+    top: 10%;
     left: 25%;
     animation: kata1 1.7s infinite normal;
 }
 
 .gyouza {
-    top: -65%;
+    top: 10%;
     right: 24%;
     width: 20vw;
     animation: kata1 1.9s infinite normal;
@@ -46,7 +49,7 @@
 
 .hargow {
     width: 16vw;
-    top: -10%;
+    top: 40%;
     right: 5%;
     z-index: 10;
     animation: kata1 2.1s infinite normal;
@@ -54,115 +57,79 @@
 
 .box {
     width: 30%;
-    top: -15%;
+    top: 40%;
     right: 0;
     z-index: 9;
     animation: kata1-2 2.3s infinite ease-in-out;
 }
 
-@media screen and (max-width: 1250px) {
-    .c-title--about__wrap {
-        width: 38%;
+@media screen and (max-width: 1100px) {   
+    .l-section.about-1 > .c-title--about__wrap {
+        top: 0;
     }
-}
-
-@media screen and (max-width: 1100px) {
     .shumai {
-        top: 7%;
+        width: 55%;
+        top: 22%;
     }
     
     .bao {
-        top: -60%;
-        left: 30%;
+        width:32%;
+        top: 35%;
+        left: 60%;
     }
     
     .gyouza {
-        top: -60%;
-        right: 30%;
-    }
-    
-    .hargow {
-        top: 10%;
-        right: 10%;
-        z-index: 10;
-    }
-    
-    .box {
-        top: 20%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .l-section.about-1 {
-        padding: 20% 0 120% 0;
-    }
-   
-    .bao, .gyouza {
-        width:28%;
-    }
-    .shumai {
-        width: 27%;
-        top: 20vh;
-    }
-    
-    .bao {
-        top: 30vh;
-        left: 55%;
-    }
-    
-    .gyouza {
-        top: 54vh;
+        width:34%;
+        top: 52%;
         left: 15%;
     }
     
     .hargow {
-        width: 25%;
-        top: 60vh;
-        right: 10%;
+        width: 27%;
+        top: 58%;
+        right: 15%;
     }
     
     .box {
-        width: 50%;
-        top: 55vh;
+        width: 45%;
+        top: 60%;
     }
+    
 }
 
-@media screen and (max-width: 640px) {
-    .l-section.about-1 {
-        padding: 20% 0 195% 0;
-    }
-
-    .c-title--about__wrap {
+@media screen and (max-width: 512px) {
+    .l-section.about-1 > .c-title--about__wrap {
         min-width: 350px;
         width: 40%;
         padding: 8% 0;
+        top: 12%;
     }
     
     .shumai {
-        width: 55%;
-        top: 30vh;
+        width: 80%;
+        top: 25%;
     }
     
     .bao {
         width: 50%;
-        top: 48vh;
+        top: 40%;
         left: 50%;
     }
     
     .gyouza {
         width: 55%;
-        top: 62vh;
+        top: 50%;
         left: 5%;
     }
     
     .hargow {
         width: 45%;
-        top: 72vh;
+        top: 56%;
         right: 0;
     }
     
     .box {
         width: 75%;
-        top: 80vh;
+        top: 60%;
     }
 }

@@ -42,7 +42,7 @@ a.thumbnail.active-thumb {
     
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 512px) {
     .thumbnail,.thumb-img,.thumb-overlay {
         width: 60px;
         height: 60px;
@@ -51,9 +51,6 @@ a.thumbnail.active-thumb {
     }
     a.thumbnail.active-thumb {
         margin: 0 10px;
-    }
-    .pagination {
-        margin-top: -20%;
     }
     .slider-icon {
         display: none;

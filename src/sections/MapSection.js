@@ -14,17 +14,18 @@ const MapSection = () => {
     
   useEffect(() => {
     Aos.init();
-
-        function handleResize() {
-            if (window.innerWidth > 1100) { setDevice("pc")} 
-            else if (window.innerWidth > 512) {setDevice("tablet")}
-            else {setDevice("mobile")}
-        }
-        window.addEventListener('resize',handleResize);
+    function handleResize() {
+      if (window.innerWidth > 1100) { setDevice("pc")} 
+      else if (window.innerWidth > 512) {setDevice("tablet")}
+      else {setDevice("mobile")}
+    }
+    window.addEventListener('resize',handleResize);
   })
 
   return (
     <section id='map' className='l-section map'>
+        <img className='bg' src={process.env.PUBLIC_URL + `/images/section-bg/map-bg-${device}.png`}/>
+
         <div className='c-title--map__wrap'>
             <h3>MAP</h3>
             <h1>お茶の水で</h1>
@@ -39,7 +40,7 @@ const MapSection = () => {
         >
           <img className='map-img' src={process.env.PUBLIC_URL + `/images/map/map-${device}.png`}
                title='Click to view in Google Map'
-               data-aos="zoom-out" data-aos-duration="700" data-aos-easing="ease-in-out"/>
+               />
           
         </a>
     </section>

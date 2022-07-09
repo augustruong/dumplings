@@ -14,6 +14,13 @@ export default function AllStoreSlider() {
     return (
         <div className='all-store-slider'>
             <div className='store-wrapper-ctn'>
+                <div className='store-img-cropper'>
+                    <div className='store-img-wrapper'>
+                        <img className='store-mask' 
+                            src={process.env.PUBLIC_URL + `/images/stores/tokyogyoza/01.png`}/>
+                        
+                    </div>
+                </div>
                 {storeData.map((store,index) => {
                     return (
                         <div key={store.id}

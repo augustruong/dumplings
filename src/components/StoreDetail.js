@@ -68,7 +68,7 @@ class StoreDetail extends Component {
                 filledIcon={<img src={process.env.PUBLIC_URL + `/icons/star-full.svg`} />}
               />
             </div>
-            <small>(Googleによるレビュー)</small>
+            <p className='small'>(Googleによるレビュー)</p>
           </div>
 
         <button className='view-more-btn'>

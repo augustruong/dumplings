@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
 
 html {
-  box-sizing: border-box;
+  overflow-x:hidden;
 }
-*, *::before, *::after {
-  box-sizing: inherit;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -50,12 +50,9 @@ p,label {
   line-height: 32px;
   color: #734D29;
 }
-
-small {
-  font-family: 'Zen Maru Gothic',sans-serif;
-  color: #734D29;
+p.small {
+  font-size: 14px ;
 }
-
 button {
   font-family: 'Zen Maru Gothic', sans-serif;
   font-size: 16px;
@@ -82,6 +79,7 @@ li:hover,.link-button:hover {
   width: 100%;
   height: auto;
   position: relative;
+  font-size: 0;
 }
 
 .l-section__inner {
@@ -89,6 +87,11 @@ li:hover,.link-button:hover {
   display: block;
   margin: 0 auto;
   position: relative;
+}
+
+.bg{
+  width: 100%;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 1400px) {

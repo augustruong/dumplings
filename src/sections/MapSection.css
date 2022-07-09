@@ -1,12 +1,11 @@
 .l-section.map {
     margin-bottom: 30px;
-    padding: 38% 0 10% 0;
 }
 
 .c-title--map__wrap {
     text-align: left;
-    /* padding: 38% 0 8% 100px; */
     padding-left: 100px;
+    top: 75%;
     z-index: 2;
     position: absolute;
 }
@@ -27,13 +26,14 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
     .l-section.map {
-        padding: 60% 0 60% 0;
+        margin-bottom: 0px;
     }
+    
     .c-title--map__wrap {
         padding-left: 10%;
-        margin-top: 35%;
+        margin-top: 5%;
     }
     .map-img__wrap {
         padding-top: 7%;
@@ -42,13 +42,10 @@
     }
 }
 
-@media screen and (max-width: 640px) {
-    .l-section.map {
-        padding: 60% 0 120% 0;
-    }
+@media screen and (max-width: 512px) {
     .c-title--map__wrap {
         padding-left: 10%;
-        margin-top: 95%;
+        margin-top: -5%;
     }
     .map-img__wrap {
         right: 0;
