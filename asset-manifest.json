@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dumplings/static/css/main.e74bc66d.css",
-    "main.js": "/dumplings/static/js/main.d3a37026.js",
+    "main.css": "/dumplings/static/css/main.c57b4cf7.css",
+    "main.js": "/dumplings/static/js/main.f4161a3b.js",
     "static/js/787.64d8b390.chunk.js": "/dumplings/static/js/787.64d8b390.chunk.js",
     "static/media/07鉄瓶ゴシック.otf": "/dumplings/static/media/07鉄瓶ゴシック.8603b973af317e3489e2.otf",
     "static/media/logo.svg": "/dumplings/static/media/logo.8ddf5e0897e1530b49ea3c0af2789605.svg",
@@ -10,12 +10,12 @@
     "static/media/bao-shape.png": "/dumplings/static/media/bao-shape.03f60a15496d3713a093.png",
     "index.html": "/dumplings/index.html",
     "static/media/mask-shape.svg": "/dumplings/static/media/mask-shape.c7bef4d8074c7ed0e692.svg",
-    "main.e74bc66d.css.map": "/dumplings/static/css/main.e74bc66d.css.map",
-    "main.d3a37026.js.map": "/dumplings/static/js/main.d3a37026.js.map",
+    "main.c57b4cf7.css.map": "/dumplings/static/css/main.c57b4cf7.css.map",
+    "main.f4161a3b.js.map": "/dumplings/static/js/main.f4161a3b.js.map",
     "787.64d8b390.chunk.js.map": "/dumplings/static/js/787.64d8b390.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e74bc66d.css",
-    "static/js/main.d3a37026.js"
+    "static/css/main.c57b4cf7.css",
+    "static/js/main.f4161a3b.js"
   ]
 }
