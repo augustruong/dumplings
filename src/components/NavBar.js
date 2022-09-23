@@ -58,22 +58,24 @@ export default class NavBar extends React.Component {
             <div>
                 {window.innerWidth <= 1100 &&
                     <div className='nav-bar'>
-                        <img src={logo} className={this.state.logoShow ? "logo show" : "logo hidden"}/>
+                            <Link to='hero' spy={true} smooth={true} offset={50} duration={500} >
+                                <img src={logo} className={this.state.logoShow ? "logo show" : "logo hidden"}/>
+                            </Link>
                             <div className='menu-icon' onClick={this.handleClick}>
                                 <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'} />
                             </div>
                             <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                                 <li className='nav-item'>
-                                    <Link to='about-1' spy={true} smooth={true} offset={50} duration={500} onClick={this.closeMobileMenu}>About</Link>
+                                    <Link to='about-1' spy={true} smooth={true} offset={50} duration={500} >About</Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='map' spy={true} smooth={true} offset={50} duration={500} onClick={this.closeMobileMenu}>Map</Link>
+                                    <Link to='map' spy={true} smooth={true} offset={50} duration={500}>Map</Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='stores' spy={true} smooth={true} offset={50} duration={500} onClick={this.closeMobileMenu}>Stores</Link>
+                                    <Link to='stores' spy={true} smooth={true} offset={50} duration={500}>Stores</Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='contact' spy={true} smooth={true} offset={50} duration={500} onClick={this.closeMobileMenu}>Contact</Link>
+                                    <Link to='contact' spy={true} smooth={true} offset={50} duration={500}>Contact</Link>
                                 </li>
                             </ul>
                                                  
@@ -82,22 +84,22 @@ export default class NavBar extends React.Component {
                 {window.innerWidth > 1100 &&
                     <div className={this.state.show ? "show" : "hidden"}>
                         <div className={this.state.color ? "nav-bar color" : "nav-bar"}>
-                            <Link to='hero' spy={true} smooth={true} offset={50} duration={500} onClick={this.closeMobileMenu}>
-                                <img src={logo} className="logo"/>
+                            <Link to='hero' spy={true} smooth={true} offset={50} duration={500}>
+                                <img src={logo} className='logo'/>
                             </Link>
 
                             <ul className='nav-menu'>
                                 <li className='nav-item'>
-                                    <Link to='about-1' spy={true} smooth={true} offset={50} duration={500} onClick={this.closeMobileMenu}>About</Link>
+                                    <Link to='about-1' spy={true} smooth={true} offset={50} duration={500}>About</Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='map' spy={true} smooth={true} offset={50} duration={500} onClick={this.closeMobileMenu}>Map</Link>
+                                    <Link to='map' spy={true} smooth={true} offset={50} duration={500}>Map</Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='stores' spy={true} smooth={true} offset={50} duration={500} onClick={this.closeMobileMenu}>Stores</Link>
+                                    <Link to='stores' spy={true} smooth={true} offset={50} duration={500}>Stores</Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='contact' spy={true} smooth={true} offset={50} duration={500} onClick={this.closeMobileMenu}>Contact</Link>
+                                    <Link to='contact' spy={true} smooth={true} offset={50} duration={500}>Contact</Link>
                                 </li>
                             </ul>
                         </div> 
